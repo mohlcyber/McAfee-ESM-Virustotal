@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nitro_policy esm="2142:5677" time="08/06/2018 10:27:42" user="mohl" build="10.3.1 20180529210843" model="ETM-VM4" version="10003001">
+  <rules count="1">
+    <rule>
+      <id>5000144</id>
+      <normid>4026531840</normid>
+      <revision>0</revision>
+      <sid>0</sid>
+      <class>2</class>
+      <message>Virustotal: Hash Lookup Results</message>
+      <description/>
+      <origin>1</origin>
+      <severity>25</severity>
+      <type>1</type>
+      <action>5</action>
+      <action_initial>5</action_initial>
+      <action_disallowed>0</action_disallowed>
+      <other_bits_default>4</other_bits_default>
+      <other_bits_disallowed>0</other_bits_disallowed>
+      <text><![CDATA[any any any -> any any (msg:"Virustotal: Hash Lookup Results";adsid:777;content:"Virustotal";content:"FileLookup";cef;var@{action}:${cat};var@{File_Hash}:${cs1};var@{Message_ID}:${cs5};var@{Message_Text}:${cs4};var@{SHA1}:${cs2};var@{SHA256}:${cs3};)]]></text>
+    </rule>
+  </rules>
+</nitro_policy>
