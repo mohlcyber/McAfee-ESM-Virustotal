@@ -19,7 +19,7 @@ def file_report(hash):
 
     return response.json()
 
-def ip_report(apikey, ip):
+def ip_report(ip):
     params = {'apikey': APIKEY, 'ip': ip}
     headers = { 'Accept-Encoding': 'gzip, deflate'}
     response = requests.get(VIRUS_TOTAL_URL + 'ip-address/report',
